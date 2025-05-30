@@ -1,148 +1,132 @@
-[日本語](/README.md) /
-[英語](/docs_i18n/README_en.md) /
-[韓国語](/docs_i18n/README_ko.md)/
-[中国語](/docs_i18n/README_zh.md)/
-[ドイツ語](/docs_i18n/README_de.md)/
-[アラビア語](/docs_i18n/README_ar.md)/
-[ギリシャ語](/docs_i18n/README_el.md)/
-[スペイン語](/docs_i18n/README_es.md)/
-[フランス語](/docs_i18n/README_fr.md)/
-[イタリア語](/docs_i18n/README_it.md)/
-[ラテン語](/docs_i18n/README_la.md)/
-[マレー語](/docs_i18n/README_ms.md)/
-[ロシア語](/docs_i18n/README_ru.md)
-*日本語以外は機械翻訳です。
+[Tiếng Nhật](/README.md) /
+[Tiếng Anh](/docs_i18n/README_en.md) /
+[Hàn Quốc](/docs_i18n/README_ko.md)/
+[Tiếng Trung](/docs_i18n/README_zh.md)/
+[tiếng Đức](/docs_i18n/README_de.md)/
+[Tiếng Ả Rập](/docs_i18n/README_ar.md)/
+[Hy Lạp](/docs_i18n/README_el.md)/
+[Tiếng Tây Ban Nha](/docs_i18n/README_es.md)/
+[Tiếng Pháp](/docs_i18n/README_fr.md)/
+[Tiếng Ý](/docs_i18n/README_it.md)/
+[tiếng Latinh](/docs_i18n/README_la.md)/
+[Tiếng Mã Lai](/docs_i18n/README_ms.md)/
+[Tiếng Nga](/docs_i18n/README_ru.md)
+*Tất cả các ngôn ngữ ngoại trừ tiếng Nhật đều được dịch bằng máy.
 
-## VCClient
+##VCClient
 
-VCClientは、AIを用いてリアルタイム音声変換を行うソフトウェアです。
+VCClient là phần mềm sử dụng AI để thực hiện chuyển đổi giọng nói theo thời gian thực.
 
-## What's New!
+##Có gì mới!
 * v.2.0.78-beta
-  * bugfix: RVCモデルのアップロードエラーを回避
-  * ver.1.x との同時起動ができるようになりました。
-  * 選択できるchunk sizeを増やしました。
+* sửa lỗi: Tránh lỗi tải mô hình RVC
+* Bây giờ có thể chạy phiên bản 1.x cùng lúc. 
+* Số lượng kích thước khối có thể chọn đã được tăng lên.
 
-* v.2.0.77-beta (only for RTX 5090, experimental)
-  * 関連モジュールを5090対応 (開発者がRTX5090未所持のため、動作未検証)
+* v.2.0.77-beta (chỉ dành cho RTX 5090, thử nghiệm)
+* Các mô-đun liên quan hiện tương thích với 5090 (hoạt động chưa được xác minh vì nhà phát triển không sở hữu RTX5090)
 * v.2.0.76-beta
-  * new feature:
-    * Beatrice: 話者マージの実装
-    * Beatrice: オートピッチシフト
-  * bugfix:
-    * サーバモードのデバイス選択時の不具合対応
+* Tính năng mới:
+* Beatrice: Triển khai hợp nhất loa
+* Beatrice: Tự động chuyển cao độ
+* Sửa lỗi:
+* Đã sửa lỗi khi chọn thiết bị ở chế độ máy chủ
 * v.2.0.73-beta
-  * new feature:
-    * 編集したbeatrice modelのダウンロード
-  * bugfix:
-    * beatrice v2 のpitch, formantが反映されないバグを修正
-    * Applio のembedderを使用しているモデルのONNXができないバグを修正
+* Tính năng mới:
+* Tải xuống mô hình beatrice đã chỉnh sửa
+* Sửa lỗi:
+* Đã sửa lỗi khiến beatrice v2 pitch và formant không được phản ánh
+* Đã sửa lỗi khiến không thể tạo ONNX cho các mô hình sử dụng trình nhúng Applio.
 
-## ダウンロードと関連リンク
+## Tải xuống và liên kết liên quan
 
-Windows版、 M1 Mac版はhugging faceのリポジトリからダウンロードできます。
+Có thể tải xuống phiên bản Windows và M1 Mac từ kho lưu trữ huging face.
 
-* [VCClient のリポジトリ](https://huggingface.co/wok000/vcclient000/tree/main)
-* [Light VCClient for Beatrice v2 のリポジトリ](https://huggingface.co/wok000/light_vcclient_beatrice/tree/main)
+* [Kho lưu trữ VCClient](https://huggingface.co/wok000/vcclient000/tree/main)
+* [Kho lưu trữ Light VCClient cho Beatrice v2](https://huggingface.co/wok000/light_vcclient_beatrice/tree/main)
 
-*1 Linuxはリポジトリをcloneしてお使いください。
+*1 Đối với Linux, vui lòng sao chép kho lưu trữ.
 
-### 関連リンク
+### Liên kết liên quan
 
-* [Beatrice V2 トレーニングコードのリポジトリ](https://huggingface.co/fierce-cats/beatrice-trainer)
-* [Beatrice V2 トレーニングコード Colab版](https://github.com/w-okada/beatrice-trainer-colab)
+* [Kho mã đào tạo Beatrice V2](https://huggingface.co/fierce-cats/beatrice-trainer)
+* [Mã đào tạo Beatrice V2 phiên bản Colab](https://github.com/w-okada/beatrice-trainer-colab)
 
-### 関連ソフトウェア
+### Phần mềm liên quan
 
-* [リアルタイムボイスチェンジャ VCClient](https://github.com/w-okada/voice-changer)
-* [読み上げソフトウェア TTSClient](https://github.com/w-okada/ttsclient)
-* [リアルタイム音声認識ソフトウェア ASRClient](https://github.com/w-okada/asrclient)
+* [Trình thay đổi giọng nói thời gian thực VCClient](https://github.com/w-okada/voice-changer)
+* [Phần mềm chuyển văn bản thành giọng nói TTSClient](https://github.com/w-okada/ttsclient)
+* [Phần mềm nhận dạng giọng nói thời gian thực ASRClient](https://github.com/w-okada/asrclient)
 
-## VC Clientの特徴
+## Tính năng của VC Client
 
-## 多様なAIモデルをサポート
+## Hỗ trợ nhiều mô hình AI khác nhau
 
-| AIモデル                                                                                                     | v.2       | v.1                  | ライセンス                                                                                 |
-| ------------------------------------------------------------------------------------------------------------ | --------- | -------------------- | ------------------------------------------------------------------------------------------ |
-| [RVC ](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/jp/README.ja.md) | supported | supported            | リポジトリを参照してください。                                                             |
-| [Beatrice v1](https://prj-beatrice.com/)                                                                     | n/a       | supported (only win) | [独自](https://github.com/w-okada/voice-changer/tree/master/server/voice_changer/Beatrice) |
-| [Beatrice v2](https://prj-beatrice.com/)                                                                     | supported | n/a                  | [独自](https://huggingface.co/wok000/vcclient_model/blob/main/beatrice_v2_beta/readme.md)  |
-| [MMVC](https://github.com/isletennos/MMVC_Trainer)                                                           | n/a       | supported            | リポジトリを参照してください。                                                             |
-| [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc)                                               | n/a       | supported            | リポジトリを参照してください。                                                             |
-| [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC)                                                               | n/a       | supported            | リポジトリを参照してください。                                                             |
+| Mô hình AI | v.2 | v.1 | Giấy phép |
+|---------------------------------------------------------------------------------------------------------- | --------- | -------------------- | ------------------------------------------------------------------------------------------- |
+| [RVC ](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/jp/README.ja.md) | được hỗ trợ | được hỗ trợ | Xem kho lưu trữ.                                                             |
+| [Beatrice v1](https://prj-beatrice.com/) | không có | được hỗ trợ (chỉ thắng) | [Sở hữu](https://github.com/w-okada/voice-changer/tree/master/server/voice_changer/Beatrice) |
+| [Beatrice v2](https://prj-beatrice.com/) | được hỗ trợ | không có | [Bản gốc](https://huggingface.co/wok000/vcclient_model/blob/main/beatrice_v2_beta/readme.md) |
+| [MMVC](https://github.com/isletennos/MMVC_Trainer) | không có | được hỗ trợ | Xem kho lưu trữ.                                                             |
+| [so-vits-svc](https://github.com/svc-develop-team/so-vits-svc) | không có | được hỗ trợ | Xem kho lưu trữ.                                                             |
+| [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC) | không có | được hỗ trợ | Xem kho lưu trữ.                                                             |
 
-## スタンドアロン、ネットワーク経由の両構成をサポート
+Hỗ trợ cả cấu hình độc lập và cấu hình mạng
 
-ローカルPCで完結した音声変換も、ネットワークを介した音声変換もサポートしています。
-ネットワークを介した利用を行うことで、ゲームなどの高負荷なアプリケーションと同時に使用する場合に音声変換の負荷を外部にオフロードすることができます。
+Nó hỗ trợ cả chuyển đổi âm thanh trên máy tính cục bộ và chuyển đổi âm thanh qua mạng.
+Bằng cách sử dụng qua mạng, bạn có thể chuyển tải công việc chuyển đổi giọng nói sang thiết bị bên ngoài khi sử dụng đồng thời với các ứng dụng tải cao như trò chơi.
 
-![image](https://user-images.githubusercontent.com/48346627/206640768-53f6052d-0a96-403b-a06c-6714a0b7471d.png)
+![hình ảnh](https://user-images.githubusercontent.com/48346627/206640768-53f6052d-0a96-403b-a06c-6714a0b7471d.png)
 
-## 複数プラットフォームに対応
+## Hỗ trợ nhiều nền tảng
 
 Windows, Mac(M1), Linux, Google Colab
 
-*1 Linuxはリポジトリをcloneしてお使いください。
+*1 Đối với Linux, vui lòng sao chép kho lưu trữ.
 
-## REST APIを提供
+## Cung cấp REST API
 
-各種プログラミング言語でクライアントを作成することができます。
+Khách hàng có thể được viết bằng nhiều ngôn ngữ lập trình khác nhau.
 
-また、curlなどのOSに組み込まれているHTTPクライアントを使って操作ができます。
+Bạn cũng có thể sử dụng trình khách HTTP được tích hợp sẵn trong hệ điều hành, chẳng hạn như curl, để vận hành nó.
 
-## トラブルシュート
+## Xử lý sự cố
 
-[通信編](tutorials/trouble_shoot_communication_ja.md)
+[Giao tiếp](tutorials/trouble_shoot_communication_ja.md)
 
-## 開発者の署名について
+## Chữ ký nhà phát triển
 
-本ソフトウェアは開発元の署名しておりません。下記のように警告が出ますが、コントロールキーを押しながらアイコンをクリックすると実行できるようになります。これは Apple のセキュリティポリシーによるものです。実行は自己責任となります。
+Phần mềm này không được nhà phát triển ký tên. Một thông báo cảnh báo sẽ xuất hiện như hình dưới đây, nhưng bạn có thể chạy chương trình bằng cách giữ phím control và nhấp vào biểu tượng. Điều này là do chính sách bảo mật của Apple. Bất kỳ hành động thực hiện nào cũng đều do bạn tự chịu rủi ro.
 
-![image](https://user-images.githubusercontent.com/48346627/212567711-c4a8d599-e24c-4fa3-8145-a5df7211f023.png)
+![hình ảnh](https://user-images.githubusercontent.com/48346627/212567711-c4a8d599-e24c-4fa3-8145-a5df7211f023.png)
 
-## Acknowledgments
+## Lời cảm ơn
 
-* [立ちずんだもん素材](https://seiga.nicovideo.jp/seiga/im10792934)
-* [いらすとや](https://www.irasutoya.com/)
-* [つくよみちゃん](https://tyc.rei-yumesaki.net/)
-
-```
-  本ソフトウェアの音声合成には、フリー素材キャラクター「つくよみちゃん」が無料公開している音声データを使用しています。
-  ■つくよみちゃんコーパス（CV.夢前黎）
-  https://tyc.rei-yumesaki.net/material/corpus/
-  © Rei Yumesaki
-```
-
-* [あみたろの声素材工房](https://amitaro.net/)
-* [れぷりかどーる](https://kikyohiroto1227.wixsite.com/kikoto-utau)
-
-## 利用規約
-
-* リアルタイムボイスチェンジャーつくよみちゃんについては、つくよみちゃんコーパスの利用規約に準じ、次の目的で変換後の音声を使用することを禁止します。
+* [Vật liệu đứng](https://seiga.nicovideo.jp/seiga/im10792934)
+* [Irasutoya](https://www.irasutoya.com/)
+* [Tsukuyomi-chan](https://tyc.rei-yumesaki.net/)
 
 ```
-
-■人を批判・攻撃すること。（「批判・攻撃」の定義は、つくよみちゃんキャラクターライセンスに準じます）
-
-■特定の政治的立場・宗教・思想への賛同または反対を呼びかけること。
-
-■刺激の強い表現をゾーニングなしで公開すること。
-
-■他者に対して二次利用（素材としての利用）を許可する形で公開すること。
-※鑑賞用の作品として配布・販売していただくことは問題ございません。
+Tính năng tổng hợp giọng nói trong phần mềm này sử dụng dữ liệu giọng nói được cung cấp miễn phí bởi nhân vật miễn phí "Tsukuyomi-chan". 
+■ Tsukuyomi-chan Corpus (CV. Yumesaki Rei)
+https://tyc.rei-yumesaki.net/material/corpus/
+© Rei Yumesaki
 ```
 
-* リアルタイムボイスチェンジャーあみたろについては、あみたろの声素材工房様の次の利用規約に準じます。詳細は[こちら](https://amitaro.net/voice/faq/#index_id6)
+* [Phòng thu âm giọng nói của Amitaro](https://amitaro.net/)
+* [Búp bê bản sao](https://kikyohiroto1227.wixsite.com/kikoto-utau)
+
+## điều khoản dịch vụ
+
+* Về phần mềm thay đổi giọng nói thời gian thực Tsukuyomi-chan, theo các điều khoản sử dụng Tsukuyomi-chan Corpus, việc sử dụng giọng nói đã chuyển đổi cho các mục đích sau là bị nghiêm cấm.
 
 ```
-あみたろの声素材やコーパス読み上げ音声を使って音声モデルを作ったり、ボイスチェンジャーや声質変換などを使用して、自分の声をあみたろの声に変換して使うのもOKです。
 
-ただしその場合は絶対に、あみたろ（もしくは小春音アミ）の声に声質変換していることを明記し、あみたろ（および小春音アミ）が話しているわけではないことが誰でもわかるようにしてください。
-また、あみたろの声で話す内容は声素材の利用規約の範囲内のみとし、センシティブな発言などはしないでください。
-```
+■Chỉ trích hoặc tấn công người khác. (Định nghĩa của "phê bình/tấn công" tuân theo giấy phép nhân vật Tsukuyomi-chan.)
 
-* リアルタイムボイスチェンジャー黄琴まひろについては、れぷりかどーるの利用規約に準じます。詳細は[こちら](https://kikyohiroto1227.wixsite.com/kikoto-utau/ter%EF%BD%8Ds-of-service)
+■ Kêu gọi hoặc phản đối một quan điểm chính trị, tôn giáo hoặc hệ tư tưởng cụ thể.
 
-## 免責事項
+■ Tiết lộ nội dung khiêu khích cao độ mà không có ranh giới.
 
-本ソフトウェアの使用または使用不能により生じたいかなる直接損害・間接損害・波及的損害・結果的損害 または特別損害についても、一切責任を負いません。
+■ Công khai theo cách cho phép người khác sử dụng cho mục đích thứ cấp (như tài liệu).
+*Phân phối và bán như tác phẩm nghệ thuật để tôn vinh.
